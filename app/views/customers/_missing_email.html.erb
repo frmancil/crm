@@ -1,0 +1,9 @@
+<% @missing_email.each do |customer| %>
+    <tr>
+      <td><%= customer.fname %></td>
+      <td><%= customer.phone %></td>
+      <td><%= customer.email %></td>
+      <td><%= customer.notes %></td>
+      <td><%= image_tag customer.image %></td>
+    </tr>
+<% end %>
